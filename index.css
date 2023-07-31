@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Victor Mono';
+}
+.main{
+    width: 100vw;
+    height: 99.8vh;
+}
+#backgrou{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://i.ytimg.com/vi/jePkQ4AYD5s/maxresdefault.jpg);
+}
+.box{
+    width: 30vw;
+    height: 60vh;
+    box-shadow: 20px 20px 50px black;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 35vw;
+    margin-top: 15vh;
+}
+.prot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(166, 166, 197, 0.601);
+    border-radius: 40px;
+    margin: 6vh 2vw 0vh 2vw;
+    height: 10vh;
+    box-shadow: 10px 10px 50px rgb(115, 112, 112);
+}
+.box > h1{
+    text-align: center;
+    color: rgb(221, 0, 0);
+}
+label {
+    color: red;
+}
+input{
+    background: rgb(160, 160, 160);
+    border-radius: 15px;
+    color: black;
+    border: none;
+    height: 4vh;
+    width: 17vw;
+}
+.prot > input::placeholder{
+    color: rgb(73, 72, 72);
+    text-align: center;
+}
+button{
+    margin: 3vw;
+    border-radius: 20px;
+    border: none;
+    width: 23vw;
+    height: 12vh;
+    color: red;
+    text-transform: uppercase;
+    background: rgb(229, 229, 229);
+    box-shadow: 10px 10px 90px black;
+    cursor: pointer;
+}
+.mainb{
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 3vh 3vw 3vh 2vw;
+    box-sizing: border-box;
+    box-shadow: 1000px 1000px 1px black;
+}
+.bar{
+    height: 7.79vh;
+    width: 6.5vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.puzzle{
+    height: 7.79vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    color: red;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .box{
+        width: 90vw;
+        height: 70vh;
+        margin: 10vh 3vw;
+    }
+    input{
+        width: 60vw;
+        height: 5vh;
+        border-radius: 25px;
+    }
+    button{
+        width: 84vw;
+        height: 20vh;
+        margin-top: 6vh;
+    }
+    .puzzle{
+        font-size: 9pt;
+    }
+}
